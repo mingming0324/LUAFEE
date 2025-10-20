@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cafe24Gowoonbam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1, h2, h3, h4, h5,
+p, span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ /* 노말라이즈 끝 */
+
+ /* 라이브러리 */
+.border-red {
+  border: 1px solid red;
+}
+
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-black {
+  border: 1px solid #000;
+}
+
+.border-green {
+  border: 1px solid green;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-d {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1920px;
+}
+
+
+
+  img {
+  width: 100%;
+  display: block;
+}
+ /* 라이브러리 끝 */
+
+/* 커스텀 */
+html {
+  font-family: 'Cafe24Gowoonbam';
+  font-family: "Aboreto", system-ui;
+  font-family: 'Pretendard';
+}
+
+/* header */
+.top-bar {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.tb-wrap {
+  font-family: "Aboreto", system-ui;
+  justify-content: space-between;
+  padding: 25px 240px;
+}
+
+.top-menu {
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu, .tb-sub {
+  gap: 20px;
+}
+
+.top-bar li span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.top-sub {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* header */
+
+
+/* main */
+
+.main-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.main-slide li {
+  width: 100%;
+}
+
+.main-slide li img {
+  object-fit: cover;
+}
+
+.swiper-scrollbar {
+  bottom: 150px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: rgba(255, 255, 255, 0.3);
+  width:  1440px !important;
+  height: 2px !important; 
+}
+
+.swiper-scrollbar-drag {
+  background: #fff; 
+}
+/* main */
+
+/* sec-1  */
+.sec-1 {
+  padding: 168px 240px 0;
+  box-sizing: border-box;
+}
+
+.sec-1_text-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-1_text-box h1 {
+  font-family: "Aboreto", system-ui;
+  font-size: 60px;
+  font-weight: 400;
+  color: #ff7777;
+}
+
+.sec-1_text-box span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffa3a3;
+}
+
+.sec-1_line-img {
+  width: 1px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.sec-1_main-img {
+  width: 100%;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-1_main-img img {
+  width: 550px;
+}
+
+.sec-1_item-wrap {
+  margin-top: 200px;
+}
+
+.sec-1_item-wrap .sec-1_item-box .sec-1_item-text-box {
+  flex-direction: column;
+}
+
+.sec-1_item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-1_item-box li {
+  position: relative;
+  width: 480px;
+  height: 874px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* 배경 기본 상태 */
+.sec-1_item-box li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: height 1s ease, top 1s ease;
+  z-index: 0;
+}
+
+/* 각 아이템별 배경 */
+.item1::before { background-image: url("./imgs/sec-1_item-img1.png"); }
+.item2::before { background-image: url("./imgs/sec-1_item-img2.png"); }
+.item3::before { background-image: url("./imgs/sec-1_item-img3.png"); }
+.item4::before { background-image: url("./imgs/sec-1_item-img4.png"); }
+.item5::before { background-image: url("./imgs/sec-1_item-img5.png"); }
+
+/* 기본 상태 */
+.sec-1_item-box li::before {
+  height: 10%;
+  top: 56%;
+  opacity: 1;
+}
+
+/* hover */
+.sec-1_item-box li:hover::before {
+  height: 100%;
+  top: 0;
+  opacity: 1;
+}
+
+/* 텍스트*/
+.sec-1_item-text-box {
+  position: relative;
+  z-index: 1;
+  color: #555;
+  transition: color 0.4s ease;
+  margin-top: 66px;
+}
+
+.sec-1_item-text-box .sub-tit {
+  font-family: "Aboreto", system-ui;
+  color: #c8c8c8;
+}
+
+.sec-1_item-text-box h1 {
+  font-family: "Aboreto", system-ui;
+}
+
+.sec-1_item-text-box .sec_1-text {
+  margin-top: 12px;
+  line-height: 24px;
+  color: #c8c8c8;
+}
+
+.sec-1_item-box li img {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  margin-top: 86px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.sec-1_item-box li:hover .sec-1_item-text-box {
+  color: #fff;
+}
+
+.sec-1_item-box li:hover .sec-1_item-text-box .sec_1-text {
+  color: #fff;
+}
+
+.sec-1_item-box li:hover .sec-1_item-text-box .sub-tit {
+  color: #fff;
+}
+/* sec-1  */
+
+/* sec-2 */
+/* sec-2 */
