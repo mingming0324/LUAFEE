@@ -140,6 +140,7 @@ html {
   font-family: 'Cafe24Gowoonbam';
   font-family: "Aboreto", system-ui;
   font-family: 'Pretendard';
+  background-color: #FFF7F5;
 }
 
 /* header */
@@ -163,7 +164,7 @@ html {
   align-items: center;
 }
 
-.top-menu, .tb-sub {
+.top-menu, .top-sub {
   gap: 20px;
 }
 
@@ -185,7 +186,6 @@ html {
 
 .main-wrap {
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -369,4 +369,262 @@ html {
 /* sec-1  */
 
 /* sec-2 */
+.sec-2 {
+  padding: 174px 240px 174px 0;
+  box-sizing: border-box;
+}
+
+.product_wrap {
+  gap: 28px;
+}
+
+.product-img {
+  position: relative;
+  width: 1026px;
+  overflow: hidden;
+}
+
+.fade-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  animation: fadeSequence 8s infinite;
+}
+
+.img1 {
+  animation-delay: 0s;
+}
+
+.img2 {
+  animation-delay: 4s; 
+}
+
+@keyframes fadeSequence {
+  0% { opacity: 0; }
+  10% { opacity: 1; }   /* 서서히 등장 */
+  40% { opacity: 1; }   /* 유지 */
+  50% { opacity: 0; }   /* 서서히 사라짐 */
+  100% { opacity: 0; }  /* 대기 */
+}
+
+.product_item-wrap {
+  flex-direction: column;
+  gap: 26px;
+}
+
+.product_item-wrap .product_item-box {
+  gap: 10px;
+}
+
+.product_item-wrap .product_item-box .product-item {
+  flex-direction: column;
+  gap: 32px;
+}
+
+.product_item-wrap .product_item-box .product-item .product_text-wrap {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product_item-wrap .product-item .product_text-wrap h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #252525;
+}
+
+.product_item-wrap .product-item .product_text-wrap .pay-box {
+  gap: 8px;
+}
+
+.product_item-wrap .product-item .product_text-wrap .pay-box .pay {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8d8d8d;
+}
+
+.product_item-wrap .product-item .product_text-wrap .sale-box {
+  gap: 8px;
+}
+
+.product_item-wrap .product-item .product_text-wrap .sale-box .sale {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff7777;
+}
+
+.product_item-wrap .product-item .product_text-wrap .sale-box .sale-pay {
+  font-size: 20px;
+  font-weight: 700;
+  color: #252525;
+}
+
 /* sec-2 */
+
+/* sec-3 */
+.sec-3_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.sec-3_text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-3_text-box span {
+  font-family: 'Cafe24Gowoonbam';
+  font-size: 64px;
+  font-weight: 400;
+  color: #fff;
+}
+/* sec-3 */
+
+/* sec-4 */
+.sec-4 {
+  padding: 174px 0 174px 240px;
+  box-sizing: border-box;
+}
+/* sec-4 */
+
+/* sec-5 */
+.sec-5_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.sec-5_text-box {
+  position: absolute;
+  bottom: 204px;
+  right: 240px;
+}
+
+.sec-5_text-box span {
+  font-size: 44px;
+  letter-spacing: 2px;
+  font-family: 'Cafe24Gowoonbam';
+  background: linear-gradient(160deg, #CCCCCC 67%, #1F720A 99%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* sec-5 */
+
+/* sec-6 */
+/* sec-6 */
+
+/* sec-7 */
+.sec-7 {
+  box-sizing: border-box;
+  padding: 136px 0;
+  overflow: hidden;
+}
+
+.sec-7_wrap {
+  gap: 74px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mySwiper-3 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mySwiper-3 .swiper-slide {
+  width: auto;
+}
+
+.sec-7_wrap span {
+  font-size: 45px;
+  font-family: "Aboreto", system-ui;
+}
+
+/* sec-7 */
+
+
+/* footer */
+.ft {
+  padding: 50px 240px;
+  box-sizing: border-box;
+}
+
+
+.ft_wrap {
+  justify-content: space-between;
+  color: #ff7777;
+}
+
+.left-text {
+  gap: 38px;
+  flex-direction: column;
+}
+
+.left-text .center, 
+.left-text .company {
+  gap: 12px;
+  flex-direction: column;
+}
+
+.left-text span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.left-text p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+.right-text {
+  gap: 124px;
+  flex-direction: column;
+}
+
+.right-text .ft-menu {
+  justify-content: flex-end;
+  gap: 118px;
+}
+
+.right-text .ft-menu .Guide,
+.right-text .ft-menu .media {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.right-text .ft-menu span {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.right-text .ft-menu .Guide-menu,
+.right-text .ft-menu .sns {
+  gap: 6px;
+  flex-direction: column;
+}
+
+
+.right-text .ft-menu .Guide-menu li,
+.right-text .ft-menu .sns li {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.right-text .ft-menu .Guide-menu li:hover,
+.right-text .ft-menu .sns li:hover {
+  text-decoration: underline;
+}
+
+.right-text p {
+  font-size: 12px;
+  font-weight: 500;
+}
+/* footer */
