@@ -143,6 +143,26 @@ html {
   background-color: #FFF7F5;
 }
 
+  /* 스크롤바 커스텀 시작 */
+  body::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    height: 15%;
+    background: #ff7777;
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #FFF7F5;
+  }
+  .swiper-horizontal {
+    touch-action: auto;
+  }
+  /* 스크롤바 커스텀 끝 */
+
 /* header */
 .top-bar {
   position: fixed;
